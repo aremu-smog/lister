@@ -24,7 +24,7 @@
                             <label for="name" class="text-medium text-blue">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="text-regular @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" placeholder="e.g John Doe" type="text" class="text-regular @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -34,11 +34,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div>
                             <label for="email" class="text-medium text-blue">{{ __('E-Mail Address') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="text-regular @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <div>
+                                <input id="email" placeholder="e.g name@domain.com" type="email" class="text-regular @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -48,11 +48,25 @@
                             </div>
                         </div>
 
+                        <div>
+                                <label for="phone" class="text-medium text-blue">{{ __('Phone number') }}</label>
+    
+                                <div>
+                                    <input id="phone" placeholder="e.g 2348100112233" type="text" class="text-regular @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required>
+    
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
                         <div class="form-group">
-                            <label for="password" class="text-medium text-blue">{{ __('Password') }}</label>
+                            <label for="password"  class="text-medium text-blue">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="text-regular @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <input id="password" placeholder="Your desired password" type="password" class="text-regular @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -66,7 +80,7 @@
                             <label for="password-confirm" class="text-medium text-blue">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="text-regular" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" placeholder="Kindly confirm your password" type="password" class="text-regular" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
@@ -78,7 +92,8 @@
                                 </button>
                             </div>
                     </form>
-                    <div class="text-light text-center text-blue">
+                    <div class="text-light text-left text-blue">
+                        <label >&nbsp;</label>
                         <p>Already have an account? <a href="/login" class="text-green">Login here</a></p>
                         
                     </div>

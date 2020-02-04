@@ -68,7 +68,8 @@
                             </button>
                         </div>
                             
-                        <div class="text-light text-center text-blue">
+                        <div class="text-light text-left text-blue">
+                                <label>&nbsp;</label>
                                 <p>Don't have an account yet? <a href="/register" class="text-green">Register here</a></p>
                                 
                             </div>
