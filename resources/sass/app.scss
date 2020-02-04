@@ -86,6 +86,9 @@ a{
         }
     }
 }
+.dashboard-listing{
+    margin-top: -150px;
+}
 
 .main-footer{
     background: $blue;
@@ -112,6 +115,12 @@ a{
     padding-bottom: 15vh;
 }
 
+.welcome{
+    height: 90vh;
+    .info{
+        margin-top: 6em;
+    }
+}
 .content-area{
     padding-bottom: 6em;
 }

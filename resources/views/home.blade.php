@@ -59,67 +59,7 @@
                     <h1 class="text-blue text-bold">Recent Listings</h1>
                 </header>
 
-                <section class="row row-spread-items">
-                        <article class="col-3 item">
-                            
-                            <header>
-                                <img src="/img/products/pizza.jpg" alt="Dominos Pizza">
-                            </header>
-                            <footer class="container">
-                                <h3 class="text-bold text-green">Dominos Pizza</h3>
-                                <p class="text-blue">If a pizza that will blow your mind away is what you are looking for well we got you covered</p>
-                                <a href="#" class="btn btn-green">View details</a>
-                            </footer>
-                        </article>
-
-                        <article class="col-3 item">
-                            
-                                <header>
-                                    <img src="/img/products/pizza.jpg" alt="Dominos Pizza">
-                                </header>
-                                <footer class="container">
-                                    <h3 class="text-bold text-green">Dominos Pizza</h3>
-                                    <p class="text-blue">If a pizza that will blow your mind away is what you are looking for well we got you covered</p>
-                                    <a href="#" class="btn btn-green">View details</a>
-                                </footer>
-                            </article>
-
-                            <article class="col-3 item">
-                            
-                                    <header>
-                                        <img src="/img/products/pizza.jpg" alt="Dominos Pizza">
-                                    </header>
-                                    <footer class="container">
-                                        <h3 class="text-bold text-green">Dominos Pizza</h3>
-                                        <p class="text-blue">If a pizza that will blow your mind away is what you are looking for well we got you covered</p>
-                                        <a href="#" class="btn btn-green">View details</a>
-                                    </footer>
-                                </article>
-
-                                <article class="col-3 item">
-                            
-                                        <header>
-                                            <img src="/img/products/pizza.jpg" alt="Dominos Pizza">
-                                        </header>
-                                        <footer class="container">
-                                            <h3 class="text-bold text-green">Dominos Pizza</h3>
-                                            <p class="text-blue">If a pizza that will blow your mind away is what you are looking for well we got you covered</p>
-                                            <a href="#" class="btn btn-green">View details</a>
-                                        </footer>
-                                    </article>
-
-                                    <article class="col-3 item">
-                            
-                                            <header>
-                                                <img src="/img/products/pizza.jpg" alt="Dominos Pizza">
-                                            </header>
-                                            <footer class="container">
-                                                <h3 class="text-bold text-green">Dominos Pizza</h3>
-                                                <p class="text-blue">If a pizza that will blow your mind away is what you are looking for well we got you covered</p>
-                                                <a href="#" class="btn btn-green">View details</a>
-                                            </footer>
-                                        </article>
-                    </section>
+                @include('partials.listings')
             </section>
         </div>
 

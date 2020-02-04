@@ -54,12 +54,12 @@ $light-grey: #F2F2F2;
     text-align: center;
     text-decoration: none;
     padding: 0.8em 2.5em;
+    color: white;
     cursor: pointer;
     @extend .text-light;
 }
 .btn-green{
     background: $green;
-    color: white;
     border-color: $green;
     &:hover{
         background: none;
@@ -75,6 +75,14 @@ $light-grey: #F2F2F2;
     }
 }
 
+.btn-red{
+    background: $red;
+    border-color: $red;
+    &:hover{
+        background: none;
+        color: $red;
+    }
+}
 
 /* Text styles */
 
@@ -119,6 +127,12 @@ $light-grey: #F2F2F2;
 .text-light{
     font-family: 'Bw Modelica Light', sans-serif !important;
     font-family: swap;
+    line-height: 20px;
+}
+
+/*sizes*/
+.text-lg{
+    font-size: 2.5em;
 }
 
 /* Backgrounds */
@@ -138,7 +152,7 @@ label{
     margin-bottom: 5px;
 }
 
-input{
+input,textarea{
     width: 100%;
     outline: none;
     color: $grey;

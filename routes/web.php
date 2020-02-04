@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'ListingsController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('listing','ListingsController');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
