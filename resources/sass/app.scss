@@ -1,8 +1,157 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+//Typography
+@import 'typography';
+@import 'custom';
+//
 
-// Variables
-@import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bw Modelica Regular', sans-serif;
+    font-size: 13px;
+    font-display: swap;
+}
+a{
+    text-decoration: none;
+}
+.main-navigation{
+    background: $blue;
+    padding: 1.5em 0em;
+    position: static;
+    top: 1;
+    a:first-child{
+        margin-right: 10px;
+    }
+}
+
+.intro{
+    height: 70vh;
+    background: $blue;
+    
+    p{
+        font-size: 3.7em;
+        span{
+            font-family: 'Rofistate';
+            font-size: 2em !important;
+            display: block;
+            margin-top: -0.7em;
+        }
+    }
+    img{
+        width: 90%;
+    }
+    .btn{
+        margin-top: -3em;
+    }
+    
+}
+
+.hero{
+    padding:2em 0;
+    background: url('/img/main/hero-background.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    h1{
+        font-size: 2.5em;
+    }
+}
+.recent-listings{
+    padding: 3em 0;
+    background: $light-grey;
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 2em;
+    }
+    .col-3{
+        width: 23.5%;
+        margin-bottom: 1.5%;
+    }
+    .item{
+        background: white;
+        padding-bottom: 3em;
+        border-radius:0px 0px 5px 5px;
+        h3{
+            font-size: 1.6em;
+        }
+        img{
+            border-radius: 5px 5px 0px 0px;
+            width: 100%;
+        }
+        p{
+            margin-bottom: 2em;
+        }
+        .btn{
+            font-size: 10px;
+            padding: 1em 2em;
+        }
+    }
+}
+
+.main-footer{
+    background: $blue;
+    height: 300px;
+    img{
+        width: 200px;
+    }
+    a:hover{
+        color: $green !important;
+    }
+    .footer-links{
+        margin-top: 2em;
+    }
+    .copyright{
+        margin-top: 8em;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+    }
+}
+.main-header{
+    height: 25vh;
+    padding-bottom: 15vh;
+}
+
+.content-area{
+    padding-bottom: 6em;
+}
+.form-wrapper{
+    .form-container,img{
+        margin-top: -150px;
+    }
+    .col-4:first-child img{
+        margin-top: -450px;
+    }
+    
+}
+.form-container{
+    background: white;
+    border-radius: 5px;
+    padding: 1em 2em 4em 2em;
+    h1{
+        font-size: 1.7em;
+        margin-bottom: 1.2em;
+    }
+}
+@media only screen and (max-width: 568px){
+    .website-wrapper{
+        background:white;
+        align-items: flex-start;
+    }
+    .status{
+        font-size: 10px;
+    }
+    .success-message{
+        height: 100vh;
+    }
+    .website-container{
+        box-shadow: none;
+        width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+        overflow-y: scroll;
+        .main-header{
+            border-radius: 0;
+        }
+    }
+}

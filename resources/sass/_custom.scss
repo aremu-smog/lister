@@ -1,0 +1,155 @@
+$blue: #00005E;
+$green: #27C97B;
+$red: #EB2C2C; 
+$grey: #707070;
+$light-grey: #F2F2F2;
+.container{
+    width: 80%;
+    margin: auto;
+}
+.container-fluid{
+    width: 90%;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.row-center-y{
+    align-items: center ;
+    flex-wrap: wrap;
+}
+.row-center-x{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row-center-xy{
+    align-items: center;
+    justify-content: center;
+}
+.row-spread-items{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@for $i from 1 to 12{
+    .col-#{$i} {
+        width: (($i/12) *100%);
+    }
+}
+/*Flex items*/
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+
+
+/* Buttons style */
+
+.btn{
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8em 2.5em;
+    cursor: pointer;
+    @extend .text-light;
+}
+.btn-green{
+    background: $green;
+    color: white;
+    border-color: $green;
+    &:hover{
+        background: none;
+        color: $green;
+    }
+}
+.btn-green-outline{
+    @extend .btn-green;
+    background: none;
+    &:hover{
+        background: $green;
+        color: white;
+    }
+}
+
+
+/* Text styles */
+
+//colors
+.text-white{
+    color: white !important;
+}
+
+.text-green{
+    color: $green !important;
+}
+
+.text-blue{
+    color: $blue !important;
+}
+
+//alignment
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: center;
+}
+
+//weights
+
+.text-bold{
+    font-family: 'Bw Modelica Bold', sans-serif !important;
+    font-family: swap;
+}
+.text-medium{
+    font-family: 'Bw Modelica Medium', sans-serif !important;
+    font-family: swap;
+}
+.text-regular{
+    font-family: 'Bw Modelica Regular', sans-serif !important;
+    font-family: swap;
+}
+.text-light{
+    font-family: 'Bw Modelica Light', sans-serif !important;
+    font-family: swap;
+}
+
+/* Backgrounds */
+
+.bg-blue{
+    background-color: $blue;
+}
+.bg-light-grey{
+    background-color: $light-grey;
+}
+
+/*Form*/
+label{
+    display: block;
+    font-size: 12px;
+    margin-top: 1.5em;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    color: $grey;
+    border:none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $grey;
+    font-size: 16px;
+    
+    &:focus{
+        border-bottom-color:$blue;
+        color: $blue;
+    }
+}

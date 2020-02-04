@@ -1,26 +1,26 @@
 @font-face {
   src: url("/font/BwModelica-Bold.otf");
-  font-family: "Bw Modelica Bold";
+  font-family: 'Bw Modelica Bold';
 }
 
 @font-face {
   src: url("/font/BwModelica-Light.otf");
-  font-family: "Bw Modelica Light";
+  font-family: 'Bw Modelica Light';
 }
 
 @font-face {
   src: url("/font/BwModelica-Medium.otf");
-  font-family: "Bw Modelica Medium";
+  font-family: 'Bw Modelica Medium';
 }
 
 @font-face {
   src: url("/font/BwModelica-Regular.otf");
-  font-family: "Bw Modelica Regular";
+  font-family: 'Bw Modelica Regular';
 }
 
 @font-face {
   src: url("/font/rofistate.otf");
-  font-family: "Rofistate";
+  font-family: 'Rofistate';
 }
 
 .container {
@@ -35,40 +35,49 @@
 
 .row {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .row-center-y {
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .row-center-x {
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .row-center-xy {
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 
 .row-spread-items {
   -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
           justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .col-1 {
-  width: 8.3333333333%;
+  width: 8.33333%;
 }
 
 .col-2 {
-  width: 16.6666666667%;
+  width: 16.66667%;
 }
 
 .col-3 {
@@ -76,11 +85,11 @@
 }
 
 .col-4 {
-  width: 33.3333333333%;
+  width: 33.33333%;
 }
 
 .col-5 {
-  width: 41.6666666667%;
+  width: 41.66667%;
 }
 
 .col-6 {
@@ -88,11 +97,11 @@
 }
 
 .col-7 {
-  width: 58.3333333333%;
+  width: 58.33333%;
 }
 
 .col-8 {
-  width: 66.6666666667%;
+  width: 66.66667%;
 }
 
 .col-9 {
@@ -100,27 +109,27 @@
 }
 
 .col-10 {
-  width: 83.3333333333%;
+  width: 83.33333%;
 }
 
 .col-11 {
-  width: 91.6666666667%;
+  width: 91.66667%;
 }
 
 /*Flex items*/
-
 .flex-start {
   -webkit-box-pack: start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
 .flex-end {
   -webkit-box-pack: end;
+      -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
 /* Buttons style */
-
 .btn {
   border-width: 1px;
   border-style: solid;
@@ -132,15 +141,13 @@
   cursor: pointer;
 }
 
-.btn-green,
-.btn-green-outline {
+.btn-green, .btn-green-outline {
   background: #27C97B;
   color: white;
   border-color: #27C97B;
 }
 
-.btn-green:hover,
-.btn-green-outline:hover {
+.btn-green:hover, .btn-green-outline:hover {
   background: none;
   color: #27C97B;
 }
@@ -155,7 +162,6 @@
 }
 
 /* Text styles */
-
 .text-white {
   color: white !important;
 }
@@ -181,28 +187,26 @@
 }
 
 .text-bold {
-  font-family: "Bw Modelica Bold", sans-serif !important;
+  font-family: 'Bw Modelica Bold', sans-serif !important;
   font-family: swap;
 }
 
 .text-medium {
-  font-family: "Bw Modelica Medium", sans-serif !important;
+  font-family: 'Bw Modelica Medium', sans-serif !important;
   font-family: swap;
 }
 
 .text-regular {
-  font-family: "Bw Modelica Regular", sans-serif !important;
+  font-family: 'Bw Modelica Regular', sans-serif !important;
   font-family: swap;
 }
 
-.text-light,
-.btn {
-  font-family: "Bw Modelica Light", sans-serif !important;
+.text-light, .btn {
+  font-family: 'Bw Modelica Light', sans-serif !important;
   font-family: swap;
 }
 
 /* Backgrounds */
-
 .bg-blue {
   background-color: #00005E;
 }
@@ -212,7 +216,6 @@
 }
 
 /*Form*/
-
 label {
   display: block;
   font-size: 12px;
@@ -239,7 +242,7 @@ input:focus {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Bw Modelica Regular", sans-serif;
+  font-family: 'Bw Modelica Regular', sans-serif;
   font-size: 13px;
   font-display: swap;
 }
@@ -269,7 +272,7 @@ a {
 }
 
 .intro p span {
-  font-family: "Rofistate";
+  font-family: 'Rofistate';
   font-size: 2em !important;
   display: block;
   margin-top: -0.7em;
@@ -366,8 +369,7 @@ a {
   padding-bottom: 6em;
 }
 
-.form-wrapper .form-container,
-.form-wrapper img {
+.form-wrapper .form-container, .form-wrapper img {
   margin-top: -150px;
 }
 
@@ -390,27 +392,25 @@ a {
   .website-wrapper {
     background: white;
     -webkit-box-align: start;
+        -ms-flex-align: start;
             align-items: flex-start;
   }
-
   .status {
     font-size: 10px;
   }
-
   .success-message {
     height: 100vh;
   }
-
   .website-container {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     width: 100%;
     max-height: 100vh;
     border-radius: 0;
     overflow-y: scroll;
   }
-
   .website-container .main-header {
     border-radius: 0;
   }
 }
-
+/*# sourceMappingURL=app.css.map */
