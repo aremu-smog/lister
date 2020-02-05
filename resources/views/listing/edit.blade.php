@@ -84,7 +84,7 @@
                             <label for="address" class="text-medium text-blue">{{ __('Business Address') }}</label>
 
                             <div>
-                                <textarea name="address" id="address" rows="3">{{$listing->address}}</textarea>
+                                <textarea name="address" id="address" rows="3" class="text-regular">{{$listing->address}}</textarea>
 
                                 @error('address')
                                     <span class="invalid-feedback" role="alert">
@@ -98,7 +98,7 @@
                             <label for="bio" class="text-medium text-blue">{{ __('Bio') }}</label>
 
                             <div>
-                                <textarea name="bio" id="bio" rows="3">{{$listing->bio}}</textarea>
+                                <textarea name="bio" id="bio" rows="3" class="text-regular">{{$listing->bio}}</textarea>
 
                                 @error('bio')
                                     <span class="invalid-feedback" role="alert">
