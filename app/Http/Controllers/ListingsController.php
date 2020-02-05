@@ -67,7 +67,7 @@ class ListingsController extends Controller
 
         $listing->save();
 
-        return 'All worked fine';
+        return redirect('/dashboard')->with('success','Your new product/service was successfully listed');
     }
 
     /**
