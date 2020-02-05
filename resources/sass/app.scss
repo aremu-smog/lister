@@ -19,8 +19,22 @@ a{
     padding: 1.5em 0em;
     position: static;
     top: 1;
-    a:first-child{
+    a{
+        margin-right: 30px;
+        &:hover{
+            color: $green !important;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .btn-green:first-child{
         margin-right: 10px;
+    }
+    .btn-green{
+        &:hover{
+            color: white !important;
+        }
     }
 }
 

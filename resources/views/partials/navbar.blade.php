@@ -1,6 +1,10 @@
 <nav class=" main-navigation">
     <div class="container-fluid row row-center-y row-spread-items">
-        <div><a href="/"><img src="/img/main/logo.svg" alt="Lister logo"></a></div>
+        <div><a 
+            href="@guest / @endguest 
+            @auth /dashboard @endauth">
+            
+            <img src="/img/main/logo.svg" alt="Lister logo"></a></div>
         <div class="row row-center-y">
             @guest
             <a href="/login" class="btn btn-green">Login</a>
@@ -9,6 +13,7 @@
             @auth
                 <a href="/dashboard" class="text-white">Dashboard</a>
                 <a href="/listing/create" class="text-white">Add Product</a>
+                {{-- <a href="#"><img src="/img/main/user.svg" alt="User Icon"></a> --}}
                 <a href="{{ route('logout') }}" class="btn btn-green-outline"
                     onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">

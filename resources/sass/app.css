@@ -274,8 +274,24 @@ a {
   top: 1;
 }
 
-.main-navigation a:first-child {
+.main-navigation a {
+  margin-right: 30px;
+}
+
+.main-navigation a:hover {
+  color: #27C97B !important;
+}
+
+.main-navigation a:last-child {
+  margin-right: 0;
+}
+
+.main-navigation .btn-green:first-child, .main-navigation .btn-green-outline:first-child {
   margin-right: 10px;
+}
+
+.main-navigation .btn-green:hover, .main-navigation .btn-green-outline:hover {
+  color: white !important;
 }
 
 .intro {
