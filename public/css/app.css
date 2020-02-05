@@ -391,6 +391,11 @@ a {
   padding: 1em 2em;
 }
 
+.recent-listings .item form {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
 .dashboard-listing {
   margin-top: -150px;
 }
