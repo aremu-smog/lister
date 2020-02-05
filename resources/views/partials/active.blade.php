@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@include('partials.navbar')
     @section('heading')
         <h1 class="text-center text-white text-bold text-lg">
             Welcome back, <span class="text-green">{{Auth::user()->name}}</span>

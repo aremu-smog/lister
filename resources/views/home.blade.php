@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="icon" href="/img/main/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="/css/app.css">
 
     </head>

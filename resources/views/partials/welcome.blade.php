@@ -5,11 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Lister</title>
-
+        <link rel="icon" href="/img/main/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="/css/app.css">
 
     </head>
     <body>
+        @include('partials.navbar')
+
        <section class="welcome bg-blue row row-center-xy">
             <div class="row container">
                 <div class="col-6 row row-center-xy">
