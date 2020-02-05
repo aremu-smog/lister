@@ -10,7 +10,7 @@
 
     </head>
     <body>
-       <header class="main-header bg-blue row row-center-xy">
+       <header class="main-header bg-blue row row-center-xy flex-column">
             @yield('heading')
        </header>
        <section class="content-area bg-light-grey">

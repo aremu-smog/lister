@@ -90,6 +90,9 @@ class ListingsController extends Controller
     public function edit($id)
     {
         //
+        $listing = Listing::find($id);
+
+        return view('listing.edit',['listing'=>$listing]);
     }
 
     /**
@@ -102,6 +105,34 @@ class ListingsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $listing = Listing::find($id);
+        $request->validate(
+            [
+                'image' => 'image|mimes:jpeg,png,gif,jpg,svg|max:2048'
+            ]
+            );
+            if(request()->image){
+                $imageName = time().'.'.request()->image->getClientOriginalExtension();
+                request()->image->move(public_path('img/products'),$imageName);
+            }else{
+                $imageName = $listing->image;
+            }
+            
+            
+            
+            
+            $listing->name = $request->input('name');
+            $listing->email = $request->input('email');
+            $listing->website = $request->input('website');
+            $listing->phone = $request->input('phone');
+            $listing->bio = $request->input('bio');
+            $listing->address = $request->input('address');
+            $listing->image = $imageName;
+            $listing->user_id = auth()->user()->id;
+    
+            $listing->save();
+    
+            return redirect('/dashboard')->with('success','Your product/service was successfully updated!');
     }
 
     /**

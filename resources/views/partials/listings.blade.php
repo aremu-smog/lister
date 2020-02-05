@@ -8,12 +8,12 @@
             </header>
             <footer class="container">
                 <h3 class="text-bold text-green">{{$listing->name}}</h3>
-                <p class="text-blue">{{$listing->bio}} </p>
+                <p class="text-blue">{{ substr($listing->bio,0,80).'...'}} </p>
                 @guest
                 <a href="#" class="btn btn-green">View details</a>  
                 @endguest
                 @auth
-                <a href="#" class="btn btn-green">Edit details</a>
+                <a href="/listing/{{$listing->id}}/edit" class="btn btn-green">Edit details</a>
                 <a href="#" class="btn btn-red">Delete item</a>
                 @endauth
                 
