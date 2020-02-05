@@ -128,15 +128,11 @@
                             <div>
                                 <label ></label>
                                 <button type="submit" class="btn btn-green">
-                                    {{ __('Register') }}
+                                    {{ __('List product/service') }}
                                 </button>
                             </div>
                     </form>
-                    <div class="text-light text-left text-blue">
-                        <label >&nbsp;</label>
-                        <p>Already have an account? <a href="/login" class="text-green">Login here</a></p>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </div>

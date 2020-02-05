@@ -79,6 +79,9 @@ class ListingsController extends Controller
     public function show($id)
     {
         //
+        $listings = Listing::where('id','!=',$id)->get();
+        $listing = Listing::find($id);
+        return view('listing.show',['listings'=>$listings,'listing'=>$listing]);
     }
 
     /**
