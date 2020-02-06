@@ -17,7 +17,7 @@ Like I mentioned in the main project description, I had to go learn some other t
 Adobe Illustrator and Adobe XD
 
 #### Illustration
-Freepik
+(Freepik)['http://www.freepik.com']
 
 #### Frontend
 HTML, CSS, Sass
@@ -25,4 +25,11 @@ HTML, CSS, Sass
 #### Backend
 Laravel, Eloquent
 
+#### Mockups
+(Smart Mockups)['https://smartmockups.com/]
+
 ## Screenshots
+Hosted on (Cloudinary)['https://cloudinary.com/']
+
+Homepage
+![]('https://res.cloudinary.com/aremusmog/image/upload/v1580982169/Laravel%20in%2010%20project%20screenshots/Lister_Homepage_uatmwp.jpg')
