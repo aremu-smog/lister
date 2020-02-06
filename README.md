@@ -17,7 +17,7 @@ Like I mentioned in the main project description, I had to go learn some other t
 Adobe Illustrator and Adobe XD
 
 #### Illustration
-(Freepik)['http://www.freepik.com']
+[Freepik](http://www.freepik.com)
 
 #### Frontend
 HTML, CSS, Sass
@@ -26,10 +26,20 @@ HTML, CSS, Sass
 Laravel, Eloquent
 
 #### Mockups
-(Smart Mockups)['https://smartmockups.com/]
+[Smart Mockups](https://smartmockups.com/)
 
 ## Screenshots
-Hosted on (Cloudinary)['https://cloudinary.com/']
+__Hosted on [Cloudinary](https://cloudinary.com/)__
+*Images may take some time load*
 
 Homepage
-![]('https://res.cloudinary.com/aremusmog/image/upload/v1580982169/Laravel%20in%2010%20project%20screenshots/Lister_Homepage_uatmwp.jpg')
+![Homepage](https://res.cloudinary.com/aremusmog/image/upload/v1580982169/Laravel%20in%2010%20project%20screenshots/Lister_Homepage_uatmwp.jpg)
+
+Register
+![Register](https://res.cloudinary.com/aremusmog/image/upload/v1580982167/Laravel%20in%2010%20project%20screenshots/Lister_Register_xinv49.jpg)
+
+Welcome
+![Welcome](https://res.cloudinary.com/aremusmog/image/upload/v1580982170/Laravel%20in%2010%20project%20screenshots/Lister_Welcome_Page_z4q3ip.jpg)
+
+Dashboard
+![Dashboard](https://res.cloudinary.com/aremusmog/image/upload/v1580982168/Laravel%20in%2010%20project%20screenshots/Lister_Dashboard_j7f8vt.jpg)
