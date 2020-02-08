@@ -6,7 +6,7 @@
     @section('heading')
 
         {{-- Welcome Information --}}
-        <h1 class="text-center text-white text-bold text-lg">
+        <h1 class="text-center text-white text-bold text-lg heading-mobile">
             Welcome back, <span class="text-green">{{Auth::user()->name}}</span>
         </h1>
 

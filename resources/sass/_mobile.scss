@@ -1,0 +1,92 @@
+@media only screen and (max-width: 568px){
+  
+    .row-mobile-reverse{
+        flex-direction: column-reverse;
+    }
+    .row-mobile-wrap{
+        flex-wrap: wrap;
+    }
+    .col-mobile-full{
+        width: 100% !important;
+    }
+    .col-mobile-half{
+        width: 50% !important;
+    }
+
+    /* Texts */
+    .heading-mobile{
+        font-size : 1.4em !important;
+    }
+
+    /*Buttons */
+    .btn{
+    border-radius: 2px;
+    font-size: 11px;
+    padding: 0.4em 1.5em;
+    }
+    .intro{
+        p{
+            font-size: 1.7em;
+        }
+        img{ margin: auto;}
+    }
+/* Main Navigation */
+.main-navigation{
+    img{
+        width: 100px;
+    }
+    .menu-items{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1em;
+        a{
+            margin:1em 0;
+        }
+    }
+}
+    .recent-listings{
+        .container{
+            width: 95%;
+        }
+        .item{
+            padding-bottom: 2em;
+            .container{
+                width: 85%;
+            }
+            h3{
+                font-size: 1em;
+            }
+            p{
+                font-size: 11px;
+                margin-bottom: 0;
+            }
+            .btn{
+            // display: none;
+            font-size: 8px;
+            padding: 0.5em 1em;
+            }
+        }
+    }
+
+    .hero{
+        img{
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    .form-wrapper{
+        img{
+            display: none;
+        }
+        .form-container{
+            margin-top: -100px;
+        }
+    }
+    
+    .main-footer{
+        img{width:150px;}
+        .col-3{width: 70%;}
+    }
+}
+

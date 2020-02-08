@@ -37,8 +37,8 @@
         </div> --}}
 
         <section class="intro row row-center-xy">
-            <div class="container row">
-                <div class="col-5">
+            <div class="container row row-mobile-reverse row-mobile-wrap">
+                <div class="col-5 col-mobile-full">
                     <div>
                         <p class="text-white">The best business listing website for</p>
                         <p><span class="text-green">entrepreneurs</span></p>
@@ -47,7 +47,7 @@
                     
                 </div>
                 <div class="col-1"></div>
-                <div class="col-6 row ">
+                <div class="col-6 row col-mobile-full">
                     <img src="/img/main/landing-illustration.svg" alt="Welcome Illustration">
                 </div>
             </div>
@@ -57,7 +57,7 @@
         <div class="recent-listings">
             <section class="container">
                 <header class="text-center">
-                    <h1 class="text-blue text-bold">Recent Listings</h1>
+                    <h1 class="text-blue text-bold heading-mobile">Recent Listings</h1>
                 </header>
 
                 @include('partials.listings')
@@ -65,14 +65,14 @@
         </div>
 
         <section class="hero">
-            <div class="container row">
+            <div class="container row row-mobile-wrap row-mobile-reverse">
                 <div class="col-1"></div>
-                <div class="col-4 row row-center-x">
+                <div class="col-4 row row-center-x col-mobile-full">
                     <img src="/img/main/hero illustration.svg" alt="Hero Illustration">
                 </div>
-                <div class="col-6 row row-center-y">
+                <div class="col-6 row row-center-y col-mobile-full">
                     <div class="">
-                        <h1 class="text-blue text-bold">
+                        <h1 class="text-blue text-bold heading-mobile">
                             Thousands of people are <br> waiting to know what you sell
                         </h1>
                         <a href="/register" class="btn btn-green">List your business</a>

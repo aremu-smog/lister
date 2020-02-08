@@ -17,8 +17,8 @@ a{
 .main-navigation{
     background: $blue;
     padding: 1.5em 0em;
-    position: static;
-    top: 1;
+    position: fixed;
+    width: 100%;
     a{
         margin-right: 30px;
         &:hover{
@@ -39,7 +39,7 @@ a{
 }
 
 .intro{
-    height: 70vh;
+    min-height: 70vh;
     background: $blue;
     
     p{
@@ -77,7 +77,7 @@ a{
         margin-bottom: 2em;
     }
     .col-3{
-        width: 23.5%;
+        padding-right: 1.5%;
         margin-bottom: 1.5%;
     }
     .item{
@@ -183,25 +183,6 @@ a{
         margin-bottom: 1.2em;
     }
 }
-@media only screen and (max-width: 568px){
-    .website-wrapper{
-        background:white;
-        align-items: flex-start;
-    }
-    .status{
-        font-size: 10px;
-    }
-    .success-message{
-        height: 100vh;
-    }
-    .website-container{
-        box-shadow: none;
-        width: 100%;
-        max-height: 100vh;
-        border-radius: 0;
-        overflow-y: scroll;
-        .main-header{
-            border-radius: 0;
-        }
-    }
-}
+
+// Mobile Styles
+@import 'mobile';

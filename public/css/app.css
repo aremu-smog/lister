@@ -291,8 +291,8 @@ a {
 .main-navigation {
   background: #00005E;
   padding: 1.5em 0em;
-  position: static;
-  top: 1;
+  position: fixed;
+  width: 100%;
 }
 
 .main-navigation a {
@@ -318,7 +318,7 @@ a {
 }
 
 .intro {
-  height: 70vh;
+  min-height: 70vh;
   background: #00005E;
 }
 
@@ -363,7 +363,7 @@ a {
 }
 
 .recent-listings .col-3 {
-  width: 23.5%;
+  padding-right: 1.5%;
   margin-bottom: 1.5%;
 }
 
@@ -490,30 +490,110 @@ a {
 }
 
 @media only screen and (max-width: 568px) {
-  .website-wrapper {
-    background: white;
-    -webkit-box-align: start;
-            align-items: flex-start;
+  .row-mobile-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
   }
 
-  .status {
-    font-size: 10px;
+  .row-mobile-wrap {
+    flex-wrap: wrap;
   }
 
-  .success-message {
-    height: 100vh;
+  .col-mobile-full {
+    width: 100% !important;
   }
 
-  .website-container {
-    box-shadow: none;
-    width: 100%;
-    max-height: 100vh;
-    border-radius: 0;
-    overflow-y: scroll;
+  .col-mobile-half {
+    width: 50% !important;
   }
 
-  .website-container .main-header {
-    border-radius: 0;
+  /* Texts */
+
+  .heading-mobile {
+    font-size: 1.4em !important;
+  }
+
+  /*Buttons */
+
+  .btn {
+    border-radius: 2px;
+    font-size: 11px;
+    padding: 0.4em 1.5em;
+  }
+
+  .intro p {
+    font-size: 1.7em;
+  }
+
+  .intro img {
+    margin: auto;
+  }
+
+  /* Main Navigation */
+
+  .main-navigation img {
+    width: 100px;
+  }
+
+  .main-navigation .menu-items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding-top: 1em;
+  }
+
+  .main-navigation .menu-items a {
+    margin: 1em 0;
+  }
+
+  .recent-listings .container {
+    width: 95%;
+  }
+
+  .recent-listings .item {
+    padding-bottom: 2em;
+  }
+
+  .recent-listings .item .container {
+    width: 85%;
+  }
+
+  .recent-listings .item h3 {
+    font-size: 1em;
+  }
+
+  .recent-listings .item p {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+
+  .recent-listings .item .btn {
+    font-size: 8px;
+    padding: 0.5em 1em;
+  }
+
+  .hero img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .form-wrapper img {
+    display: none;
+  }
+
+  .form-wrapper .form-container {
+    margin-top: -100px;
+  }
+
+  .main-footer img {
+    width: 150px;
+  }
+
+  .main-footer .col-3 {
+    width: 70%;
   }
 }
 

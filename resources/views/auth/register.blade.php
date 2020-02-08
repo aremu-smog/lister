@@ -7,12 +7,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row form-wrapper">
+    <div class="row form-wrapper row-mobile-wrap ">
             <div class="col-4 row row-center-x">
                     <a href="/"></a>
                     <img src="/img/main/guy pressing laptop.svg" alt="Guy pressing laptop">
                 </div>
-        <div class="col-4">
+        <div class="col-4 col-mobile-full">
             <div class="form-container">
                 <div class="text-green text-bold text-center"><h1>{{ __('Register') }}</h1></div>
 

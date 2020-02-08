@@ -1,11 +1,11 @@
 <nav class=" main-navigation">
-    <div class="container-fluid row row-center-y row-spread-items">
-        <div><a 
+    <div class="container-fluid row row-center-y row-spread-items row-mobile-wrap">
+        <div class="col-mobile-full"><a 
             href="@guest / @endguest 
             @auth /dashboard @endauth">
             
             <img src="/img/main/logo.svg" alt="Lister logo"></a></div>
-        <div class="row row-center-y">
+        <div class="row row-center-y col-mobile-full menu-items">
             @guest
             <a href="/login" class="btn btn-green">Login</a>
             <a href="/register" class="btn btn-green-outline">Register</a>
