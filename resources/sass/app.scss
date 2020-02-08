@@ -17,7 +17,8 @@ a{
 .main-navigation{
     background: $blue;
     padding: 1.5em 0em;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     width: 100%;
     a{
         margin-right: 30px;

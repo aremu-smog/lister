@@ -291,7 +291,9 @@ a {
 .main-navigation {
   background: #00005E;
   padding: 1.5em 0em;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   width: 100%;
 }
 
