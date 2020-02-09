@@ -42,7 +42,7 @@
                     <div>
                         <p class="text-white">The best business listing website for</p>
                         <p><span class="text-green">entrepreneurs</span></p>
-                        <a href="/register" class="btn btn-green">Get started</a>
+                        <a href="/register" class="btn btn-green btn-mobile-lg">Get started</a>
                     </div>
                     
                 </div>
@@ -75,7 +75,7 @@
                         <h1 class="text-blue text-bold heading-mobile">
                             Thousands of people are <br> waiting to know what you sell
                         </h1>
-                        <a href="/register" class="btn btn-green">List your business</a>
+                        <a href="/register" class="btn btn-green btn-mobile-lg">List your business</a>
                     </div>
                 </div>
             </div>
@@ -83,4 +83,6 @@
         
         @include('partials.footer')
     </body>
+
+    <script src="/js/app.js"></script>
 </html>

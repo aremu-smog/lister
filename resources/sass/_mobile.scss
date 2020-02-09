@@ -15,7 +15,7 @@
 
     /* Texts */
     .heading-mobile{
-        font-size : 1.4em !important;
+        font-size : 1.7em !important;
     }
 
     /*Buttons */
@@ -24,10 +24,14 @@
     font-size: 11px;
     padding: 0.4em 1.5em;
     }
+    .btn-mobile-lg{
+        border-radius: 3px;
+        padding: 0.7em 2em;
+    }
     .intro{
-        p{
-            font-size: 1.7em;
-        }
+        padding-bottom: 2em;
+        p{ font-size: 2em; }
+        
         img{ margin: auto;}
     }
 /* Main Navigation */
@@ -35,7 +39,12 @@
     img{
         width: 100px;
     }
+    .menu-icon{
+        display: block;
+        width: 25px;
+    }
     .menu-items{
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 1em;
@@ -87,6 +96,11 @@
     .main-footer{
         img{width:150px;}
         .col-3{width: 70%;}
+    }
+
+    /*Welcome Illustration*/
+    .welcome-illustration{
+        width: 60%;
     }
 }
 

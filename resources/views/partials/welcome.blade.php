@@ -12,22 +12,23 @@
     <body>
         @include('partials.navbar')
 
-       <section class="welcome bg-blue row row-center-xy">
-            <div class="row container">
-                <div class="col-6 row row-center-xy">
-                    <img src="/img/main/welcome illustration.svg" alt="Welcome illustration">
+       <section class="welcome bg-blue row row-center-xy ">
+            <div class="row container row-mobile-wrap row-mobile-reverse">
+                <div class="col-6 row row-center-xy col-mobile-full welcome-illustration">
+                    <img src="/img/main/welcome illustration.svg" class="welcome-illustration" alt="Welcome illustration">
                 </div>
-                <div class="col-4 ">
+                <div class="col-4 col-mobile-full">
                     <div class="info">
-                        <h1 class="text-green text-bold text-lg">{{Auth::user()->name}}</h1>
+                        <h1 class="text-green text-bold text-lg heading-mobile">{{Auth::user()->name}}</h1>
                         <p class="text-white text-light">
                             You are just a step away from getting your products and services in front of thousands of people.
                         </p>
                         <label ></label>
-                        <a href="/listing/create" class="btn btn-green">List your product/service</a>
+                        <a href="/listing/create" class="btn btn-green btn-mobile-lg">List your product/service</a>
                     </div>
                 </div>
             </div>
        </section>
     </body>
+    <script src="/js/app.js"></script>
 </html>

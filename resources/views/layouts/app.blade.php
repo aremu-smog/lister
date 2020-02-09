@@ -21,4 +21,5 @@
         
         @include('partials.footer')
     </body>
+    <script src="/js/app.js"></script>
 </html>
