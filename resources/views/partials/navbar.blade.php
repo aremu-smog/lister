@@ -9,8 +9,8 @@
         </div>
         <div class="row row-center-y col-mobile-full menu-items">
             @guest
-            <a href="/login" class="btn btn-green">Login</a>
-            <a href="/register" class="btn btn-green-outline">Register</a>
+            <a href="/login" class="btn btn-green btn-mobile-lg">Login</a>
+            <a href="/register" class="btn btn-green-outline btn-mobile-lg">Register</a>
             @endguest
             @auth
                 <a href="/dashboard" class="text-white">Dashboard</a>

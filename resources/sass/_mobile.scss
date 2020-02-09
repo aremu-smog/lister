@@ -24,6 +24,10 @@
     font-size: 11px;
     padding: 0.4em 1.5em;
     }
+    .btn-hide-on-mobile{
+        display: none;
+    }
+
     .btn-mobile-lg{
         border-radius: 3px;
         padding: 0.7em 2em;
@@ -58,7 +62,7 @@
             width: 95%;
         }
         .item{
-            padding-bottom: 2em;
+            padding-bottom: 1em;
             .container{
                 width: 85%;
             }
@@ -66,20 +70,25 @@
                 font-size: 1em;
             }
             p{
-                font-size: 11px;
-                margin-bottom: 0;
+                // font-size: 11px;
+                // margin-bottom: 0;
+                display: none;
             }
             .btn{
             // display: none;
             font-size: 8px;
             padding: 0.5em 1em;
             }
+            
         }
     }
 
     .hero{
+        .col-4,.col-6{
+            padding: 2em 0;
+        }
         img{
-            width: 50%;
+            width: 60%;
             margin: auto;
         }
     }
@@ -99,8 +108,20 @@
     }
 
     /*Welcome Illustration*/
-    .welcome-illustration{
-        width: 60%;
+    .welcome{
+        .col-4{
+            padding-bottom: 3em;
+        }
+        .welcome-illustration{
+            width: 60%;
+        }
+
+    }
+    
+    .list-view{
+        img{
+            width: 100%;
+        }
     }
 }
 

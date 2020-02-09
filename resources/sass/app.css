@@ -374,7 +374,7 @@ a {
 .recent-listings .item {
   background: white;
   padding-bottom: 3em;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 5px;
 }
 
 .recent-listings .item h3 {
@@ -519,6 +519,9 @@ a {
     font-size: 11px;
     padding: 0.4em 1.5em;
   }
+  .btn-hide-on-mobile {
+    display: none;
+  }
   .btn-mobile-lg {
     border-radius: 3px;
     padding: 0.7em 2em;
@@ -558,7 +561,7 @@ a {
     width: 95%;
   }
   .recent-listings .item {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
   .recent-listings .item .container {
     width: 85%;
@@ -567,15 +570,17 @@ a {
     font-size: 1em;
   }
   .recent-listings .item p {
-    font-size: 11px;
-    margin-bottom: 0;
+    display: none;
   }
   .recent-listings .item .btn {
     font-size: 8px;
     padding: 0.5em 1em;
   }
+  .hero .col-4, .hero .col-6 {
+    padding: 2em 0;
+  }
   .hero img {
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
   .form-wrapper img {
@@ -591,8 +596,14 @@ a {
     width: 70%;
   }
   /*Welcome Illustration*/
-  .welcome-illustration {
+  .welcome .col-4 {
+    padding-bottom: 3em;
+  }
+  .welcome .welcome-illustration {
     width: 60%;
+  }
+  .list-view img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=app.css.map */

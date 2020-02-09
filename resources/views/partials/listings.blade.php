@@ -8,10 +8,10 @@
                         <img src="/img/products/{{$listing->image}}" alt="{{$listing->name}}">
                         </header>
                         <footer class="container">
-                            <h3 class="text-bold text-green">{{$listing->name}}</h3>
+                                <a href="/listing/{{$listing->id}}"><h3 class="text-bold text-green">{{$listing->name}}</h3></a>
                             <p class="text-blue">{{ substr($listing->bio,0,80).'...'}} </p>
                             @guest
-                            <a href="/listing/{{$listing->id}}" class="btn btn-green">View details</a>  
+                            <a href="/listing/{{$listing->id}}" class="btn btn-green btn-hide-on-mobile">View details</a>  
                             @endguest
                             @auth
                             <div class="row">

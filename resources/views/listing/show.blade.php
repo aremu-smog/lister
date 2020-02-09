@@ -12,22 +12,23 @@
     <body>
         @include('partials.navbar')
        <header class="list-view bg-blue ">
-            <div class="container row">
-                <div class="col-4 row row-center-x">
+            <div class="container row row-mobile-wrap">
+                <div class="col-4 row row-center-x col-mobile-full">
                     <img src="/img/products/{{$listing->image}}" alt="{{$listing->name}}">
                 </div>
-                <div class="col-6">
-                    <h1 class="text-white text-lg text-bold">{{$listing->name}}</h1>
+                <div class="col-6 col-mobile-full">
+                    <h1 class="text-white text-lg text-bold heading-mobile">{{$listing->name}}</h1>
                     <div>
-                        <a href="http://{{$listing->website}}" target="_blank" class="btn btn-green">Visit website</a>
-                        <a href="mailto:{{$listing->email}}" target="_blank" class="btn btn-green-outline">Send a mail</a>
+                        <a href="http://{{$listing->website}}" target="_blank" class="btn btn-green btn-mobile-lg">Visit website</a>
+                        <a href="mailto:{{$listing->email}}" target="_blank" class="btn btn-green-outline btn-mobile-lg">Send a mail</a>
                     </div>
                     
                     <p class="text-regular text-white">{{$listing->bio}}</p>
                     <hr>
-                    <div class="text-light text-white additional-info">
-                       <img src="/img/main/location.svg" alt="Location Icon" class="icon"> {{$listing->address}} 
-                       &nbsp; &nbsp; <img src="/img/main/phone.svg" alt="Phone Icon" class="icon"> {{$listing->phone}}
+                    <div class="text-light text-white additional-info row-mobile-wrap">
+                        <div class="mobile-full"><img src="/img/main/location.svg" alt="Location Icon" class="icon"> {{$listing->address}}</div>
+                        <div class="mobile-full"><img src="/img/main/phone.svg" alt="Phone Icon" class="icon"> {{$listing->phone}}</div>
+                        
                     </div>
                 </div>
             </div>
@@ -36,7 +37,7 @@
             <div class="recent-listings">
                     <section class="container">
                         <header class="text-center">
-                            <h1 class="text-blue text-bold">Other Listings</h1>
+                            <h1 class="text-blue text-bold heading-mobile">Other Listings</h1>
                         </header>
         
                         @include('partials.listings')

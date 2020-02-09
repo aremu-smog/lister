@@ -2,7 +2,7 @@
 @include('partials.navbar')
 @section('heading')
 
-    <h1 class="text-white text-white">List your product/service</h1>
+    <h1 class="text-white text-white heading-mobile">List your product/service</h1>
     
 @endsection
 

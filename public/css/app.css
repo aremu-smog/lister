@@ -376,7 +376,7 @@ a {
 .recent-listings .item {
   background: white;
   padding-bottom: 3em;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 5px;
 }
 
 .recent-listings .item h3 {
@@ -528,6 +528,10 @@ a {
     padding: 0.4em 1.5em;
   }
 
+  .btn-hide-on-mobile {
+    display: none;
+  }
+
   .btn-mobile-lg {
     border-radius: 3px;
     padding: 0.7em 2em;
@@ -575,7 +579,7 @@ a {
   }
 
   .recent-listings .item {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
 
   .recent-listings .item .container {
@@ -587,8 +591,7 @@ a {
   }
 
   .recent-listings .item p {
-    font-size: 11px;
-    margin-bottom: 0;
+    display: none;
   }
 
   .recent-listings .item .btn {
@@ -596,8 +599,13 @@ a {
     padding: 0.5em 1em;
   }
 
+  .hero .col-4,
+  .hero .col-6 {
+    padding: 2em 0;
+  }
+
   .hero img {
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
 
@@ -619,8 +627,16 @@ a {
 
   /*Welcome Illustration*/
 
-  .welcome-illustration {
+  .welcome .col-4 {
+    padding-bottom: 3em;
+  }
+
+  .welcome .welcome-illustration {
     width: 60%;
+  }
+
+  .list-view img {
+    width: 100%;
   }
 }
 
