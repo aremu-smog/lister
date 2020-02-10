@@ -1,5 +1,5 @@
 # Introduction
-Lister is an online listing platform built with Laravel as part my Laravel in 10projects series. It's project three
+Lister is an online listing platform built with Laravel as part my Laravel in 10projects series. It's project three. [Preview here](http://list-er.herokuapp.com/)
 
 ## Important lessons learnt
 Like I mentioned in the main project description, I had to go learn some other things that were not touched on by Brad traversy as per say I sabi book. Some of the things I learnt include
