@@ -74,39 +74,50 @@ a{
     }
 }
 .recent-listings{
-    padding: 3em 0;
     background: $light-grey;
+    padding: 4em 0;
     h1{
         font-size: 2.5em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
-    .col-3{
-        padding-right: 1.5%;
-        margin-bottom: 1.5%;
-    }
-    .item{
-        background: white;
-        padding-bottom: 3em;
-        border-radius:5px;
-        h3{
-            font-size: 1.6em;
-        }
-        img{
-            border-radius: 5px 5px 0px 0px;
-            width: 100%;
-        }
-        p{
-            margin-bottom: 2em;
-        }
-        .btn{
-            font-size: 10px;
-            padding: 1em 2em;
-        }
-        form{
-            margin-block-end: 0;
+    .listings{
+        // $auto-grid-min-size: 10rem;
+        // padding: 2em 0;
+        display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax($auto-grid-min-size, 1fr));
+        gap: 1em ;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-auto-flow: row;
+        // .col-3{
+        //     padding-right: 1.5%;
+        //     margin-bottom: 1.5%;
+        // }
+        .item{
+            background: white;
+            padding-bottom: 3em;
+            border-radius:5px;
+            h3{
+                font-size: 1.6em;
+            }
+            img{
+                border-radius: 5px 5px 0px 0px;
+                width: 100%;
+            }
+            p{
+                margin-bottom: 2em;
+            }
+            .btn{
+                font-size: 10px;
+                padding: 1em 2em;
+            }
+            form{
+                margin-block-end: 0;
+            }
         }
     }
 }
+
 .dashboard-listing{
     margin-top: -150px;
 }
