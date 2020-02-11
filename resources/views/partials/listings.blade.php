@@ -1,8 +1,8 @@
 
-<section class="row">
+<section class="listings">
     @foreach ($listings as $listing)
 
-    <article class="col-3 col-mobile-half">
+    <article class="">
         <section class="item">
                 <header>
                         <img src="/img/products/{{$listing->image}}" alt="{{$listing->name}}">

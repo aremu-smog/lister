@@ -1,4 +1,18 @@
-@media only screen and (max-width: 568px){
+@media only screen and (max-width:1200px){
+ .recent-listings{
+     .listings{
+         grid-template-columns: repeat(4,1fr);
+     }
+ }   
+}
+@media only screen and (max-width: 900px){
+    .recent-listings{
+        .listings{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+@media only screen and (max-width: 600px){
   
     .row-mobile-reverse{
         flex-direction: column-reverse;
@@ -59,28 +73,32 @@
 }
     .recent-listings{
         .container{
-            width: 95%;
+            width: 90%;
         }
-        .item{
-            padding-bottom: 1em;
-            .container{
-                width: 85%;
+        .listings{
+            grid-template-columns: repeat(2,1fr);
+            .item{
+                padding-bottom: 1em;
+                .container{
+                    width: 85%;
+                }
+                h3{
+                    font-size: 1em;
+                }
+                p{
+                    // font-size: 11px;
+                    // margin-bottom: 0;
+                    display: none;
+                }
+                .btn{
+                // display: none;
+                font-size: 8px;
+                padding: 0.5em 1em;
+                }
+                
             }
-            h3{
-                font-size: 1em;
-            }
-            p{
-                // font-size: 11px;
-                // margin-bottom: 0;
-                display: none;
-            }
-            .btn{
-            // display: none;
-            font-size: 8px;
-            padding: 0.5em 1em;
-            }
-            
         }
+        
     }
 
     .hero{
